@@ -1,1 +1,3 @@
-io.warnofnocutdowntreesbyhand.name=You can't cut down trees with your bare hands.
+io.hagiographa.warnofnocutdowntreesbyhand=You can't cut down trees with your bare hands.
+
+base.material.iron=iron_ingot

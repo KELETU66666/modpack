@@ -10,6 +10,7 @@ import mods.ctutils.utils.Math;
 
 import crafttweaker.text.ITextComponent;
 
+
 function noCutDownTreesByHand (event as BlockHarvestDropsEvent) as void{
     var player as IPlayer = event.player;
     if(!event.isPlayer || event.drops.length == 0 || event.silkTouch) return;
@@ -17,7 +18,7 @@ function noCutDownTreesByHand (event as BlockHarvestDropsEvent) as void{
     if(<ore:logWood>.matches(event.drops[0].stack)){
         if(isNull(player.currentItem) || !(player.currentItem.toolClasses has "axe")){
             event.drops = [];
-            player.sendRichTextMessage(ITextComponent.fromTranslation(game.localize("io.warnofnocutdowntreesbyhand.name")));
+            player.sendRichTextMessage(ITextComponent.fromTranslation(game.localize("io.hagiographa.warnofnocutdowntreesbyhand")));
         }
         
     }
