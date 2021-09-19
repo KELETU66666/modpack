@@ -141,5 +141,5 @@ val materials as Material[] = material.buildMaterial(
 
 registerPartsToArray(
     materials,
-    ["ingot","dust","nugget","plate","rod","block"]
+    ["ingot","dust","nugget","plate","rod","block","ore"]
 );
